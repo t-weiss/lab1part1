@@ -1,0 +1,26 @@
+body {
+  font-family: "open sans";
+  background-color: #f9fafc;
+  margin: 15px;
+}
+.name {
+  font-weight: bold;
+}
+a {
+  display: block;
+  color: #69696a;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.copy {
+  border-left: 4px solid #69696a;
+  padding-left: 10px;
+}
