@@ -16,8 +16,9 @@ a {
 .button {
   background-color: #000;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 15px;
   text-align: center;
+  padding: 5px;
 }
 
 .copy {
