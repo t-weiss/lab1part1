@@ -1,7 +1,16 @@
 body {
-  font-family: "open sans";
+  font-family: "open sans", sans-serif;
   background-color: #f9fafc;
   margin: 15px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
 }
 .name {
   font-weight: bold;
@@ -24,4 +33,74 @@ a {
 .copy {
   border-left: 4px solid #69696a;
   padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  ul {
+    display: flex;
+  }
+
+  a {
+    display: inline;
+    margin-top: 0px;
+    padding: 0px;
+    margin-left: 10px;
+  }
+  li {
+    padding: 5px;
+  }
+  .name {
+    padding: 5px;
+  }
+  .main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+  .words {
+    width: 50%;
+  }
+
+  .scroll {
+    position: fixed;
+    bottom: 0px;
+    right: 50%;
+    margin: 10px;
+    transform: translateX(50%);
+  }
+
+  .shapes {
+    position: relative;
+    height: 300px;
+    width: 300px;
+  }
+  .bigC {
+    height: 250px;
+    width: 250px;
+    background-color: rgba(247, 136, 167, 0.6);
+    border-radius: 50%;
+    position: absolute;
+  }
+  .midC {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(247, 193, 162, 0.7);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  .littleC {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(207, 130, 213, 0.6);
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    bottom: 150px;
+  }
 }
